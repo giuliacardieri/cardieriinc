@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiUrl: process.env.NUXT_API,
+      gmapsId: process.env.NUXT_GMAPS,
       cookiebot: process.env.NUXT_COOKIEBOT,
     },
   },
