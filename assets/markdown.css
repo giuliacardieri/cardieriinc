@@ -1,0 +1,10 @@
+.markdown p,
+.markdown a,
+.markdown li {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.markdown p + p {
+  margin-top: 1em;
+}

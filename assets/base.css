@@ -1,0 +1,34 @@
+:root {
+  --yellow: #e0ca21;
+  --dark-yellow: darken($yellow, 2.5%);
+  --light-yellow: #e5e597;
+  --white: #fff;
+  --light-gray: #f9f9f9;
+  --medium-gray: #eee;
+  --black-trans: rgba(0, 0, 0, 0.75);
+  --white-trans: rgba(255, 255, 255, 0.7);
+  --grey: #333;
+  --black: #222;
+  --blue: #2a4057;
+  --dark-blue: rgba(42, 64, 87, 0.75);
+  --border-radius: 4px;
+  --logo-max-width: 175px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--light-gray);
+  color: var(--blue);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
