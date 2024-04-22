@@ -37,7 +37,7 @@
         v-if="data.Vagas"
         iconLabel="Vagas"
         iconName="car"
-        :label="`${data.Vagas} Vaga${data.Vagas.parseInt < 2 ? '' : 's'}`"
+        :label="`${data.Vagas} Vaga${parseInt(data?.Vagas) < 2 ? '' : 's'}`"
       />
       <IconTextGroup
         v-if="data.Entrega"

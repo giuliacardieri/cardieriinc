@@ -61,6 +61,19 @@ defineProps({
 });
 
 const submitted = ref(false);
+const hasErrors = ref(false);
+
+const debounce = (fn, delay) => {
+  let t = null;
+  return function (...args) {
+    clearTimeout(t);
+    t = setTimeout(() => {
+      fn(...args);
+    }, delay);
+  };
+};
+
+submitForm = debounce(submitForm, 1000);
 
 async function submitForm(payload) {
   const runtimeConfig = useRuntimeConfig();
@@ -75,6 +88,7 @@ async function submitForm(payload) {
 
 function showErrors() {
   hasErrors.value = true;
+  clickedSubmit.value = false;
 }
 </script>
 
@@ -85,7 +99,7 @@ function showErrors() {
   margin-top: 0.5rem;
 }
 
-.form--dark :deep(.formkit-label) {
+.form p {
   color: var(--blue);
 }
 
@@ -97,6 +111,7 @@ function showErrors() {
 }
 
 .form :deep(.formkit-label) {
+  color: var(--blue);
   font-size: 0.9rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -132,8 +147,14 @@ function showErrors() {
   color: var(--blue);
 }
 
+.form :deep(.formkit-messages) {
+  padding-left: 0;
+}
+
 .form :deep(.formkit-message) {
+  color: var(--blue);
   font-size: 0.8rem;
   font-weight: bold;
+  list-style: none;
 }
 </style>

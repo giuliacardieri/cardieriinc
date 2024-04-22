@@ -26,9 +26,9 @@ useSeoMeta({
   googlebot: "index, follow",
   canonical: "https://cardieri.com.br",
   description:
-    "Há 60 anos no mercado, garantindo qualidade e acabamento diferenciado em nossos empreendimentos.",
+    "Construtora há 60 anos no mercado de Sorocaba-SP, garantindo qualidade e acabamento diferenciado em nossos empreendimentos.",
   ogDescription:
-    "Há 60 anos no mercado, garantindo qualidade e acabamento diferenciado em nossos empreendimentos.",
+    "Construtora há 60 anos no mercado de Sorocaba-SP, garantindo qualidade e acabamento diferenciado em nossos empreendimentos.",
   ogTitle: "Cardieri Inc",
   ogImage:
     "https://res.cloudinary.com/du9aie2jo/image/upload/v1704775488/large_home_f94d811f7d.jpg",
